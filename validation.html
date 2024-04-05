@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation form</title>
+    <link rel="stylesheet" href="validation.CSS">
+
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <i class="fas fa-paper-plane"></i>
+            <div class="input-group">
+
+                <label> Full name</label>
+                <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                <span id="name-error"> </span>
+            </div>
+            <div class="input-group">
+
+                <label> Phone NO.</label>
+                <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+                <span id="phone-error"> </span>
+            </div>
+            <div class="input-group">
+                <label> Email Id</label>
+                <input type="email" name="" id="email" placeholder=" Enter email" id="contact-email"
+                    onkeyup="validateEmail()">
+                <span id="email-error"> </span>
+            </div>
+            <div class="input-group">
+                <label> Your message</label>
+                <textarea rows="5" placeholder="Enter Your Message" id="contact-message"
+                    onkeyup="validatemessage()"></textarea>
+                <span id="message-error"> </span>
+            </div>
+
+            <button onclick=" return validateform()"> Sumbit </button>
+            <span id="sumbit-error"> </span>
+        </form>
+    </div>
+    <script src="validation.js"></script>
+</body>
+
+</html>
